@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- importing last version of vue.js via CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <h2>CARD DISPLAYER</h2>
+    <div id="app">
+        <button id="next" @click="nextCard">⇾</button>
+        <button id="previus" @click="prevCard">⇽</button>
+        <!-- this part is used by view js to display cards -->
+        <div id="display">
+            <img :src="currentCard.image" alt="">
+            <h1>{{ currentCard.Title }}</h1>
+            <p>{{ currentCard.Desc }}</p>
+            <script src="js/script.js"></script>
+        </div> 
+    </div>
+    </main>
+    <footer>
+        <p>groop ; jérély VIOT and Baptiste Le Callonec</p>
+    </footer>
+</body>
+</html>
